@@ -44,3 +44,20 @@ app.post('/api/notes', (req, res) => {
     });
   });
 });
+
+// HTML Routes
+
+// GET /notes - Returns the notes.html file
+app.get('/notes', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/notes.html'));
+});
+
+// GET * - Catch-all route that returns the index.html file
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/index.html'));
+});
+
+// Start the server
+app.listen(PORT, () => {
+  console.log(`App listening at http://localhost:${PORT}`);
+});
