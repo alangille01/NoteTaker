@@ -13,7 +13,6 @@ This application allows you to create and manage notes on a web interface. The b
 - [Usage](#usage)
 - [License](#license)
 - [Contributing](#contributing)
-- [Tests](#tests)
 - [Questions](#questions)
 
 ## Installation
